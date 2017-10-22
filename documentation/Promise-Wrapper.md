@@ -40,7 +40,6 @@ async function example2 () {
    await Promise.all([pool.query('select sleep(2)'), pool.query('select sleep(3)')]);
    console.log('3 seconds after');
    await pool.end();
-   await conn.end();
 }
 ```
 
